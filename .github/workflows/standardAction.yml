@@ -27,5 +27,4 @@ jobs:
         with:
           script: |
               #!/usr/bin/env kotlin
-              //more kotlin script code here
-      - run: kotlinc GadgetgalleryApplication.kt -include-runtime -d /tmp/gadgetgallery.jar; java -jar /tmp/gadgetgallery.jar
+      - run: kotlinc src/main/kotlin/com/tek/gadgetgallery/GadgetgalleryApplication.kt -include-runtime -d /tmp/gadgetgallery.jar; java -jar /tmp/gadgetgallery.jar
